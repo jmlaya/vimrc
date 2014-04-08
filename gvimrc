@@ -25,9 +25,9 @@ if has("win32")
     " Unless you install Consolas font by your own, of course.
     set guifont=Consolas:h11
 elseif has("gui_gtk2")
-    " If using GTK2, use DejaVu Sans. This font is quite nice
-    " and it's installed on almost any Linux distribution.
-    set guifont=DejaVu\ Sans\ Mono\ 10
+    " If using Ubuntu, use Ubuntu Mono font.
+    " TODO: Automatically check whether using Ubuntu or not.
+    set guifont=Ubuntu\ Mono\ 13
 endif
 
 " If using GVim, switch to Solarized Dark.
