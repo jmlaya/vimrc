@@ -122,8 +122,7 @@ endif
 
 " Are we supporting a full color pallete?
 if &t_Co >= 256 || has("gui_running")
-    color solarized
-    set background=dark
+    color monokai
 endif
 
 set showmode            " always show which more are we in
