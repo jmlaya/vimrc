@@ -1,84 +1,35 @@
-## About
+danirod's vimrc
+====
 
-This my vimrc setup. Keeping your vim setup in a Git repository
-is cool because you can track the changes you do to your set up,
-you can rollback if something goes wrong, you can branch and
-test new settings while keeping your base setup stable...
+About vimrc
+----
 
-Also, pushing my vimrc to GitHub is nice because I have an
-online backup. In case I format my PC or want to install vim into
-a new computer, I just have to clone my repository and it's done.
+vimrc is the main configuration file for the text editor Vim. This file contains instructions that are executed by Vim on start up. Usually people write here settings that they want to enable whenever Vim gets started so that the settings that they like are enabled _by default_ as the program executes.
 
-There's another reason for pushing my vimrc setup online. You can
-share your setup with everybody, let people learn from what you're
-done. I like to browse other vimrc repos here at GitHub and learn
-from their experience. I know my vimrc setup is tiny and modest but
-I'm proud of it.
+What is the point on sharing your vimrc?
+----
 
-## Install
+1. **Backup**. By keeping a copy of my Vim configuration online, if I ever accidentally damage my settings I can always restore them. If I have to format my computer, change operating system or install a new computer or virtual machine I can easily get my configuration in a breeze.
 
-### Requirements
+2. **Sync**. I have a copy on Vim on most of the computers I have to regulary touch. This includes my own computer, some servers, virtual machines and even my work computer, using Vim for Windows. If I modify my Vim configuration I can push it here and them pull it from any other machine that I use.
 
-* **Linux / MacOS X**: installation is done as a shell script.
-  I've tested my setup on Linux and on MacOS X and it works out of
-  the box. It should work on **Windows** too if you get Bash for
-  Windows first; although I haven't tested it. There's **NO**
-  support for sucky Windows Command Prompt and it won't ever have.
-* **vim 7.3 +**: it's my version, I've tested my setup against this
-  version. I don't know if it'll work on older versions of vim.
-  Vundle was also tested on vim 7.3.
-* **Git**: required for cloning Vundle's submodule. Tested on Git 1.7.9.
-* **Curl**: required by Vundle for cloning plugins.
+3. **Sharing**: anyone can look at my dotfiles and get inspiration or cool ideas, then add those settings to their own dotfiles. It's a great way to learn something new.
 
-Optionally you can also have **gvim** (vim-gtk) or **MacVim** if you want.
+Using this vimrc
+----
 
-### Install
+Anyone is free to use my vimrc. But keep in mind that this configuration is mine and designed to fit in my workflow. Not everybody works the same and if you want to use this vimrc you probably want to modify your configuration file before.
 
-You can grab a [zipball](http://github.com/danirod/vimrc/archive/master.zip)
-or a [tarball](http://github.com/danirod/vimrc/archive/master.tar.gz) if you
-don't want to use Git; but I encourage you to use Git since it will allow
-you to update the setup easier. If you don't use Git, you'll have to
-manually download Vundle too.
+I encourage you to fork this repository. Then, clone your own fork, then make your own tweaks, and then push them to your own repository (it's yours, you can anyway!). Now you have your settings online too, which is cool because of all the reasons I said before.
 
-To install this setup using Git just clone the repo into ~/.vim, then run
-the installation script.
+Let me repeat one more time about my workflow. This configuration file may make use of plugins to extend what Vim can and cannot do. This might include plugins to work with compilers or other software that you may not even use. So, keep in mind that using this configuration in a wild computer might not be optimal without any tweaks.
 
+Disclaimer
+----
 
-    git clone git://github.com/danirod/vimrc ~/.vim
-    cd ~/.vim
-    sh install.sh
+These settings work for me on my machines. I definitely am no responsible if using these settings makes your computer burn, your microwave explode or something like that. Just leave me alone.
 
-Install script will automatically clone vundle, symlink vimrc to ~/.vimrc
-and gvimrc to ~/.gvimrc and install all my plugins into Vundle. You can do
-that manually if you want.
+License
+----
 
-## Plugins
-
-My vimrc setup is powered by [Vundle](http://github.com/gmarik/Vundle.vim).
-Vundle is an awesome plugin manager for Vim that takes care of automatically
-installing plugins, so you don't haveto care about them. You just add them
-to your vimrc file and Vundle can clone them.
-
-I used to use Pathogen. It's also a nice solution; however it requires you
-to manage manually your plugins, for instance, by submoduling all of them,
-which is sometimes hard. If you want to use Pathogen, you can checkout
-__pathogen__ branch. It may be outdated, though.
-
-Some plugins I use:
-
-* [vim-colors-solarized](http://github.com/altercation/vim-colors-solarized):
-  solarized colorscheme. Really nice, uses 256 colors, looks nice on GVim
-  and on Vim if your terminal supports 256 colors. It has two color schemes:
-  dark and light.
-* [vim-github-colorscheme](http://github.com/endel/vim-github-colorscheme):
-  colorscheme that uses GitHub's syntax highlighting colorscheme.
-* [scrooloose/nerdtree](http://github.com/scrooloose/nerdtree): tree viewer
-  for Vim. You can open it by using a command and it helps you navigate
-  through all your files.
-* [wlangstroth/vim-racket](http://github.com/wlangstroth/vim-racket): add
-  Racket support for Vim (syntax highlighting, .rkt extension, indenting...)
-* [tpope/vim-fugitive](http://github.com/tpope/vim-fugitive): Git inside Vim.
-  Simply awesome.
-
-Please note that this list may be outdated. Refer to my vimrc file in
-case you want to see the actual plugin list bundled in my setup.
+The content of this repository is published under a MIT license. See LICENSE-MIT.txt file for details.
