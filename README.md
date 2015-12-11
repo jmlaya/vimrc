@@ -82,3 +82,8 @@ Some plugins I use:
 
 Please note that this list may be outdated. Refer to my vimrc file in
 case you want to see the actual plugin list bundled in my setup.
+
+
+To compile vim with python read this:
+
+http://benfrain.com/compiling-custom-vim-source-os-x-10-9-mavericks/
