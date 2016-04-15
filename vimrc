@@ -122,7 +122,7 @@ endif
 
 " Are we supporting a full color pallete?
 if &t_Co >= 256 || has("gui_running")
-    color solarized
+    color Tomorrow-Night
     set background=dark
 endif
 
